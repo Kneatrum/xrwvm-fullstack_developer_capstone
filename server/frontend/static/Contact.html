@@ -1,0 +1,89 @@
+<html>
+<head>
+  <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+      <div class="container-fluid">
+        <h2 style="padding-right: 5%;">Dealerships</h2>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
+        <div class="banner" name="about-header">
+        <!-- Insert header information here -->
+        <h1>Contact Us</h1>
+          <p>We’d love to hear from you! Please feel free to reach out to us using the contact information below or by filling out our contact form.</p>
+        </div>
+        <div style="display: flex;flex-direction: row; margin:auto">
+    
+        <div class="card" style="width: 50%;">
+          <!--<img class="card-img-top" src="/static/maria.jpg" alt="Card image">-->
+          <div class="card-body">
+            <div class="contact-section">
+                <h2>Our Location</h2>
+                <p><strong>Premier Auto Dealership</strong><br>
+                1234 Main Street<br>
+                Cityville, ST 56789</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="contact-section">
+                <h2>Contact Information</h2>
+                <p><strong>Phone Numbers</strong><br>
+                Sales: (123) 456-7890<br>
+                Service: (123) 456-7891<br>
+                Parts: (123) 456-7892</p>
+                
+                <p><strong>Email Addresses</strong><br>
+                Sales: <a href="mailto:sales@premierauto.com">sales@premierauto.com</a><br>
+                Service: <a href="mailto:service@premierauto.com">service@premierauto.com</a><br>
+                Parts: <a href="mailto:parts@premierauto.com">parts@premierauto.com</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="width: 800px;">
+            <div class="card-body">
+              <h2>Leave a message</h2>
+              <form action="submit_form.php" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone"><br>
+                
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+            </div>
+        </div>
+  
+
+      </div>
+      </div>
+      </div>
+
+    </div>
