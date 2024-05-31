@@ -46,4 +46,4 @@ class CarModel(models.Model):
     # Other fields as needed
 
     def __str__(self):
-        return str(self.car_make) + "\n" + str(self.model)  # Return the name as the string representation
+        return self.name  # Return the name as the string representation
