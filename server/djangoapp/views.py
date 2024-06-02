@@ -80,9 +80,9 @@ def registration(request):
     if not username_exist:
         # Create user in auth_user table
         user = User.objects.create_user(username=username,
-                                        first_name=first_name, 
+                                        first_name=first_name,
                                         last_name=last_name,
-                                        password=password, 
+                                        password=password,
                                         email=email)
         # Login the user and redirect to list page
         login(request, user)
@@ -132,6 +132,6 @@ def add_review(request):
         except Exception as e:
             return JsonResponse({"status": 401,
                                 "message": "Error in posting review",
-                                "error": str(e)})
+                                    "error": str(e)})
     else:
         return JsonResponse({"status": 403, "message": "Unauthorized"})
